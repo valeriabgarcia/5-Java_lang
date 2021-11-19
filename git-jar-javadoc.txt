@@ -1,0 +1,9 @@
+https://github.com/alura-cursos/Curso-Java-parte-5-Pacotes-e-java.lang/
+
+O Maven organiza os JARs (código compilado, código fonte e documentação)
+em um repositório central que é publico e pode ser pesquisado:
+https://mvnrepository.com/
+
+https://cursos.alura.com.br/course/maven-build-do-zero-a-web
+
+https://docs.oracle.com/javase/7/docs/api/java/lang/String.html

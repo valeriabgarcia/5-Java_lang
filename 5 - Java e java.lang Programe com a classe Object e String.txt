@@ -1,0 +1,49 @@
+https://cursos.alura.com.br/formacao-java
+https://cursos.alura.com.br/course/java-pacotes-e-java-lang
+
+O método toString() existe para devolver uma informação sobre o estado do objeto.
+
+1 - ORGANIZANDO AS CLASSES COM PACOTES 
+Packages servem para organizar o nosso código
+Packages fazem parte do FQN (Full Qualified Name) da classe
+O nome completo da classe (FQN) é composto de: PACKAGE.NOME_SIMPLES_CLASSE
+A definição do package deve ser a primeira declaração no código fonte
+Para facilitar o uso de classes de outros packages podemos importá-los
+Os imports ficam logo após da declaração do package
+A nomenclatura padrão é usar o nome do domínio na web ao contrário junto com o nome do projeto, por exemplo:
+	br.com.caelum.geradornotas
+
+2 - TODOS OS MODIFICADORES DE ACESSO
+Existem 3 palavras chaves relacionado com a visibilidade: private, protected, public
+Existem 4 níveis de visibilidade (de menor para maior):
+	- private (visível apenas na classe)
+	- <<package private>> (visível na classe E em qualquer outro membro do mesmo pacote, podendo ser chamado de default)
+	- protected (visível na classe E em qualquer outro membro do mesmo pacote E para qualquer filho)
+	- public (visível em qualquer pacote)
+Os modificadores podem ser usados na definição da classe, atributo, construtor e método
+
+3 - DISTRIBUIÇÃO DO SEU CÓDIGO
+quais comentários e tags (anotações) a usar para definir o javadoc
+como gerar o javadoc no Eclipse
+que javadoc é uma documentação para desenvolvedores
+que as classes Java padrão também usam javadoc
+como criar nossa própria biblioteca através do JAR (J*ava *ARchive)
+como importar a biblioteca no novo projeto
+como criar um JAR executável
+
+4 - O PACOTE JAVA.LANG
+O package java.lang é o único pacote que não precisa ser importado
+Nele tem classes fundamentais que qualquer aplicação precisa, como a classe String e System
+Objetos da classe String são imutáveis e usamos uma sintaxe literal para criar (object literal)
+Qualquer método de alteração da classe String devolve uma nova String que representa a alteração
+A classe String é uma CharSequence
+Se precisamos concatenar muitos String devemos usar a classe StringBuilder
+Vimos vários métodos da classe String como trim, charAt, contains, isEmpty, length, indexOf, replace
+
+5 - A CLASSE OBJECT
+Todas as classes trabalham com a regra de que a classe Object está no topo da hierarquia, sendo esta a classe mãe. 
+A classe Object foi inventada a partir do conceito de que de que tudo é um objeto. 
+	Com isso, conseguimos algumas vantagens relacionadas à herança, como polimorfismo e reutilização de código.
+Existe um universo com muitas classes que que se baseiam em métodos definidos na classe Object, 
+  e o desenvolvedor deve sobrescrever tais métodos para atribuir maior significado a eles. Analisamos o método println() 
+  que internamente chama toString(), mais genérico do que, por exemplo, o java.lang
